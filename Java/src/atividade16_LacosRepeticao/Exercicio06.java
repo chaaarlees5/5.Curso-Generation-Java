@@ -14,7 +14,7 @@ public class Exercicio06 {
 		Scanner ler = new Scanner(System.in);
 
 		do {
-			System.out.printf("Digite o %d número (digite 0 para sair): ", x);
+			System.out.printf("Digite o %d° número (digite 0 para sair): ", x);
 			numero = ler.nextInt();
 			
 			if(numero % 3 == 0 && numero != 0) {
@@ -24,8 +24,13 @@ public class Exercicio06 {
 			x++;
 		} while (numero != 0);
 		
-		media3 = soma3 / cont3;
-		System.out.print("\nMédia dos números múltiplos de 3: " + media3);
+		if(cont3 > 0) {
+			media3 = soma3 / cont3;
+			System.out.print("\nMédia dos números múltiplos de 3: " + media3);
+		} else {
+			media3 = 0;
+			System.out.print("\nMédia dos números múltiplos de 3: " + media3);
+		}
 	}
 
 }

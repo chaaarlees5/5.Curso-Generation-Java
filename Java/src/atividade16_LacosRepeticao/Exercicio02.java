@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class Exercicio02 {
 
 	public static void main(String[] args) {
-		int numero, x, par=0, impar=0;
+		int numero, par=0, impar=0, x;
 		
 		Scanner ler = new Scanner(System.in);
 
 		for(x=1; x <= 10; x++) {
-			System.out.printf("Digite o %d° número: ", x);
+			System.out.print("Digite o número: ");
 			numero = ler.nextInt();
 			
 			if(numero % 2 == 0) {

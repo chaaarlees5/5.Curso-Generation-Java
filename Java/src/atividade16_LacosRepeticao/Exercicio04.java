@@ -24,9 +24,9 @@ public class Exercicio04 {
 		while(x <= 150) {
 			System.out.print("\nDigite a idade da " + x + "° pessoa: ");
 			idade = ler.nextInt();
-			System.out.print("Digite o sexo da " + x + "° pessoa (1 p/ Feminino, 2 p/ Masculino e 3 p/ Outros): ");
+			System.out.print("Digite o sexo da " + x + "° pessoa \n(1 p/ Feminino, 2 p/ Masculino e 3 p/ Outros): ");
 			sexo = ler.nextInt();
-			System.out.print("Digite o traço da " + x + "° pessoa (1 p/ Calmo(a), 2 p/ Nervoso(a) e 3 p/ Agressivo(a)): ");
+			System.out.print("Digite o traço da " + x + "° pessoa \n(1 p/ Calmo(a), 2 p/ Nervoso(a) e 3 p/ Agressivo(a)): ");
 			traco = ler.nextInt();
 			
 			if(traco == 1) {

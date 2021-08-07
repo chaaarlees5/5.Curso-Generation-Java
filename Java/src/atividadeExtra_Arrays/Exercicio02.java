@@ -16,8 +16,8 @@ public class Exercicio02 {
 		String pares="", impares="";
 	
 		Scanner ler = new Scanner(System.in); //Colocar 'ler' como um objeto da classe Scanner
-
-		for(int pos=0; pos < 6; pos++) { //Gerar vetor de 6 posições.
+//Gerar vetor de 6 posições.
+		for(int pos=0; pos < 6; pos++) { 
 			System.out.printf("Digite o %d° número: ", pos+1);
 			vetor[pos] = ler.nextInt(); //Atribui o valor digitado na posição em que o vetor está.
 			

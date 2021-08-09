@@ -8,7 +8,7 @@ public class POOEmpregado {
 	private double salario;
 
 	public POOEmpregado(String n, double s) {
-		this.setNome(n);
+		this.metodo1(n);
 		this.setSalario(s);
 	}
 
@@ -16,8 +16,8 @@ public class POOEmpregado {
 		return nome;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void metodo1(String x) {
+		this.nome = x;
 	}
 
 	public double getSalario() {

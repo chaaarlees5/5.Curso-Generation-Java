@@ -7,21 +7,35 @@ package atividade17_OrientacaoObjetos;
 public class Cliente {
 	
 	private String animal;
-	private String raca;
 	private String nome;
 	private float peso;
 	private int idade;
+	private int horas;
+	private int minutos;
 
-	public Cliente(String an, String raca, String nome, float peso, int idade) {
-		this.setAnimal(an);
-		this.setRaca(raca);
+	public Cliente(String anim, String nom, float pes, int idad, int hora, int minuto) {
+		this.setAnimal(anim);
+		this.setHoras(hora);
 		this.setNome(nome);
 		this.setPeso(peso);
 		this.setIdade(idade);
+		this.setMinutos(minuto);
 	}
 
-	public void imprimirInfo() {
-		System.out.println("O " + animal + " da raça " + raca + ", de nome  " + nome + ", pesa " + peso + "kg");
+	public int getHoras() {
+		return horas;
+	}
+
+	public void setHoras(int horas) {
+		this.horas = horas;
+	}
+
+	public int getMinutos() {
+		return minutos;
+	}
+
+	public void setMinutos(int minutos) {
+		this.minutos = minutos;
 	}
 	
 	public String getAnimal() {
@@ -30,14 +44,6 @@ public class Cliente {
 
 	public void setAnimal(String animal) {
 		this.animal = animal;
-	}
-
-	public String getRaca() {
-		return raca;
-	}
-
-	public void setRaca(String raca) {
-		this.raca = raca;
 	}
 
 	public String getNome() {
@@ -64,4 +70,11 @@ public class Cliente {
 		this.idade = idade;
 	}
 	
+	public void imprimirInfo(int y) {
+			System.out.printf("\n************** %d° **************", y);
+			System.out.println("\nAnimal: " + animal);
+			System.out.println("Nome: " + nome);
+			System.out.println("Peso: " + peso + "kg(s)");
+			System.out.printf("Idade: %d anos\n", idade);
+	}
 }

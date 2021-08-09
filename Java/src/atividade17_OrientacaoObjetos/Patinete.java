@@ -1,103 +1,79 @@
 package atividade17_OrientacaoObjetos;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Patinete {
 
-	public String cor;
-	private String marca;
-	private String motor;
-	private float valor;
-	//private int qtdRodas;
-	//private int garantia;
-	//private boolean motor;
+	 private String cor;
+	 public int marca;
+	 private boolean motor;
+	 public float valor;
 	//private boolean infantil;
 	
-	public Patinete(String cor, String marc, boolean mot, float val) {
-		this.setCor(cor);
-		this.setMarca(marc);
-		this.setMotor(mot);
-		this.setValor(val);
-//		this.setInfantil(infant);
-//		this.setQtdRodas(rodas);
-//		this.setGarantia(garant);
-	}
-
-	//public void imprimirInfo(String cor, String marca, float valor) {
-	public void imprimirInfo() {
-		System.out.println(cor);
-		System.out.println(marca);
-		System.out.println(motor);
-		//System.out.printf("\nO patinete %s da marca %s custa R$%f", cor, marca, valor);
-	}
-	
-	public void receberCor(String x) {
+	public Patinete(String x, int marc, boolean mot, float val) {
 		this.cor = x;
-	}
-
-	public void receberMarca(String x) {
-		this.marca = x;
-	}
-	
-	public void receberMotor(String x) {
-		this.motor = x;
+		this.marca = marc;
+		this.motor = mot;
+		this.valor = val;
+//		this.setInfantil(infant);
 	}
 	
 	public String getCor() {
 		return cor;
 	}
 
-	public void setCor(String cor) {
-		this.cor = cor;
+	public void setCor(String cores) {
+		this.cor = cores;
 	}
 
-	public String getMarca() {
+	public int getMarca() {
 		return marca;
 	}
 
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-/*
-	public int getQtdRodas() {
-		return qtdRodas;
+	public void setMarca(int marcas) {
+		this.marca = marcas;
 	}
 
-	public void setQtdRodas(int qtdRodas) {
-		this.qtdRodas = qtdRodas;
-	}
-
-	public int getGarantia() {
-		return garantia;
-	}
-
-	public void setGarantia(int garantia) {
-		this.garantia = garantia;
-	}
-*/
-	public boolean isMotor() {
+	public boolean getMotor() {
 		return motor;
 	}
 
-	public void setMotor(boolean motor) {
-		this.motor = motor;
+	public void setMotor(boolean leia) {
+		this.motor = leia;
 	}
 
 	public float getValor() {
+		if(marca == 1) {
+			this.valor += 250;
+		} else {
+			this.valor += 450;
+		}
+		if(motor == true) {
+			this.valor += 670;
+		} else {
+			this.valor += 122;
+		}
 		return valor;
 	}
 
-	public void setValor(float valor) {
-		this.valor = valor;
+	public void setValor(float value) {
+		this.valor = value;
 	}
 	
-/*
-	public boolean isInfantil() {
-		return infantil;
+	public String formatarMoeda() {
+		NumberFormat nf = NumberFormat.getCurrencyInstance(); //Define a formatação da moeda conforme a linguagem do computador
+		nf.setMinimumFractionDigits(2); //Quantidade de casas depois da vírgula
+		String formatoMoeda = nf.format(this.getValor());
+		return formatoMoeda;
 	}
 
-	public void setInfantil(boolean infantil) {
-		this.infantil = infantil;
+	public void imprimirInfo() {
+		System.out.println("\nInformações do Patinete: ");
+		System.out.println("Cor: " + cor);
+		System.out.println("Marca: " + marca);
+		System.out.println("Motorizado: " + motor);
+
+		System.out.printf("\nO patinete custa %s", this.formatarMoeda());
 	}
-*/
 }

@@ -2,9 +2,9 @@ package polimorfismoHeranca;
 
 public class Animal {
 	
-	private String nome;
-	private int idade;
-	private String som;
+	protected String nome;
+	protected int idade;
+	protected String som;
 	
 	public Animal(String nome, int idade, String som) {
 		this.nome = nome;
@@ -29,20 +29,10 @@ public class Animal {
 	}
 
 	public String getSom() {
-		/*if(nome == "cavalo") { 
-			som = "relinchar";
-		} else if (nome == "cachorro") {
-			som = "latir";
-		} else {
-			som = "som da preguiça";
-		}*/
 		return som;
 	}
 
 	public void setSom(String som) {
 		this.som = som;
 	}
-	
-	public void 
-	
 }

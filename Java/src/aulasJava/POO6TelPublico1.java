@@ -1,8 +1,8 @@
 package aulasJava;
 
-public class POOTelPublico1 extends POOTelefone1 {
+public class POO6TelPublico1 extends POO6Telefone1 {
 	
-	public POOTelPublico1() {
+	public POO6TelPublico1() {
 		super("Telefone publico");
 	}
 	

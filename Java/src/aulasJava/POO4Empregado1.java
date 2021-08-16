@@ -1,12 +1,12 @@
 package aulasJava;
 
-public class POOEmpregado1 extends POOPessoa {
+public class POO4Empregado1 extends POOPessoa {
 	
 	private int codigoSetor;
 	private float salarioBase;
 	private float imposto;
 	
-	public POOEmpregado1(String nome, String endereco, String cpf, int telefone, int idade, int codigoSetor, float salarioBase, float imposto) {
+	public POO4Empregado1(String nome, String endereco, String cpf, int telefone, int idade, int codigoSetor, float salarioBase, float imposto) {
 		super(nome, endereco, cpf, telefone, idade);
 		this.codigoSetor = codigoSetor;
 		this.salarioBase = salarioBase;

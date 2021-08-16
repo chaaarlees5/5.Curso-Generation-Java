@@ -1,13 +1,13 @@
 package aulasJava;
 
-public class POOTesteTelefone1 {
+public class POO6TesteTelefone1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		POOCelular1 celular = new POOCelular1();
-		POOFixo1 fixo = new POOFixo1();
-		POOTelPublico1 publico = new POOTelPublico1();
-		POOTelefone1 telefone = null;
+		POO6Celular1 celular = new POO6Celular1();
+		POO6Fixo1 fixo = new POO6Fixo1();
+		POO6TelPublico1 publico = new POO6TelPublico1();
+		POO6Telefone1 telefone = null;
 		
 		int n = (int) (Math.random()*3.0); //segundo int usado para pegar só a parte inteira de Random
 		
@@ -29,7 +29,7 @@ public class POOTesteTelefone1 {
 		
 		if(telefone != null) {
 			telefone.disca("92324544");
-			telefone.toca(1);
+			telefone.toca(n);
 		}
 	}
 

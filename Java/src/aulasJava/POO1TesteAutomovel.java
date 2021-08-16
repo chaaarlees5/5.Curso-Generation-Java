@@ -1,11 +1,11 @@
 package aulasJava;
 
-public class POOTesteAutomovel {
+public class POO1TesteAutomovel {
 	
 	public static void main(String[] args) {
 		// Instanciando um Objeto da Classe POOAutomovel
 		
-		POOAutomovel terrivel = new POOAutomovel("Alysson Rodrigo", "Porsche", "GNB-1404", 2021);
+		POO1Automovel terrivel = new POO1Automovel("Alysson Rodrigo", "Porsche", "GNB-1404", 2021);
 		// Troca de mensagens
 		terrivel.imprimirInfo();
 		
@@ -14,7 +14,7 @@ public class POOTesteAutomovel {
 		terrivel.setNomeProprietario("Bárbrinha");
 		terrivel.imprimirInfo();
 	
-		POOAutomovel valente = new POOAutomovel("Diego Silva", "Audi", "BDS1612", 2021);
+		POO1Automovel valente = new POO1Automovel("Diego Silva", "Audi", "BDS1612", 2021);
 		valente.imprimirInfo();
 		
 		valente.setPlaca("BDS2G12");

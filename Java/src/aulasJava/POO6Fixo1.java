@@ -1,8 +1,8 @@
 package aulasJava;
 
-public class POOFixo1 extends POOTelefone1 {
+public class POO6Fixo1 extends POO6Telefone1 {
 	
-	public POOFixo1() {
+	public POO6Fixo1() {
 		super("Telefone fixo");
 	}
 	@Override

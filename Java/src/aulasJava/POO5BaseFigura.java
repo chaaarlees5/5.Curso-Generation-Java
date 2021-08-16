@@ -1,13 +1,13 @@
 package aulasJava;
 
-public class POOBaseFigura {
+public class POO5BaseFigura {
 	
 	protected double lado1;
 	protected double lado2;
 	protected String nome;
 	protected String nomeClasse;
 	
-	POOBaseFigura(double lado1, double lado2, String nome) {
+	POO5BaseFigura(double lado1, double lado2, String nome) {
 		this.lado1 = lado1;
 		this.lado2 = lado2;
 		this.nome = nome;

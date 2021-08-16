@@ -1,11 +1,11 @@
 package aulasJava;
 
-public class POOFornecedor1 extends POOPessoa {
+public class POO4Fornecedor1 extends POOPessoa {
 
 		private double valorCredito;
 		private double valorDivida;
 		
-		public POOFornecedor1(String nome, String endereco, String cpf, int telefone, int idade, double valorCredito, double valorDivida) {
+		public POO4Fornecedor1(String nome, String endereco, String cpf, int telefone, int idade, double valorCredito, double valorDivida) {
 			super(nome, endereco, cpf, telefone, idade);
 			this.valorCredito = valorCredito;
 			this.valorDivida = valorDivida;

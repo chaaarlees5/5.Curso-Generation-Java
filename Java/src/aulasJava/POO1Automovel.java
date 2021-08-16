@@ -1,6 +1,6 @@
 package aulasJava;
 
-public class POOAutomovel {
+public class POO1Automovel {
 	
 	//declaração dos atributos da classe
 	
@@ -11,14 +11,14 @@ public class POOAutomovel {
 	
 	//Criação do método Construtor
 	
-	public POOAutomovel(String nomeProprietario, String modelo, String placa, int ano) {
+	public POO1Automovel(String nomeProprietario, String modelo, String placa, int ano) {
 		this.nomeProprietario = nomeProprietario; //inicializa atributos da classe POOAutomovel
 		this.modelo = modelo;
 		this.placa = placa;
 		this.ano = ano;
 	}
 	
-	public POOAutomovel(String modelo) {
+	public POO1Automovel(String modelo) {
 		this.modelo = modelo;
 	}
 	

@@ -2,7 +2,7 @@ package aulasJava;
 
 import java.util.Scanner;
 
-public class POOCliente {
+public class POO3Cliente {
 	Scanner leia = new Scanner(System.in);
 	
 	double vp, vt; // vp = valor do produto e vt = valor total
@@ -10,7 +10,7 @@ public class POOCliente {
 	private String nomeCliente;
 	private int codigoCliente;
 	
-	public POOCliente(String nome, int codigo) {
+	public POO3Cliente(String nome, int codigo) {
 		this.nomeCliente = nome;
 		this.codigoCliente = codigo;
 	}

@@ -1,6 +1,6 @@
 package aulasJava;
 
-public interface POOFiguras {
+public interface POO5Figuras {
 	
 	public String nomeInterface = "Figuras";
 	

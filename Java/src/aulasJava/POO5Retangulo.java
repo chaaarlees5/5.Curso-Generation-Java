@@ -1,10 +1,10 @@
 package aulasJava;
 
-public class POORetangulo extends POOBaseFigura
-						  implements POOFiguras 
+public class POO5Retangulo extends POO5BaseFigura
+						  implements POO5Figuras 
 {
-	POORetangulo(double lado1, double lado2, String nome) 
-	{
+	POO5Retangulo(double lado1, double lado2, String nome) {
+		
 		super(lado1, lado2, nome);
 		nomeClasse = "Retângulo";
 	}

@@ -2,13 +2,13 @@ package aulasJava;
 
 import java.text.NumberFormat;
 
-public class POOEmpregado {
+public class POO2Empregado {
 	
 	private String nome;
 	private double salario;
 
-	public POOEmpregado(String n, double s) {
-		this.metodo1(n);
+	public POO2Empregado(String n, double s) {
+		this.setNome(n);
 		this.setSalario(s);
 	}
 
@@ -16,8 +16,8 @@ public class POOEmpregado {
 		return nome;
 	}
 
-	public void metodo1(String x) {
-		this.nome = x;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public double getSalario() {

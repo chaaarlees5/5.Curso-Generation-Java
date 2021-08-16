@@ -1,8 +1,8 @@
 package aulasJava;
 
-public class POOCelular1 extends POOTelefone1 {
+public class POO6Celular1 extends POO6Telefone1 {
 	
-	public POOCelular1() {
+	public POO6Celular1() {
 		super("Telefone celular");
 	}
 	
